@@ -2,17 +2,17 @@
 
 <project name="JenkinsDemo" basedir="." default="build">
 
-    <target name="build" depends="prepare, phpunit"/>
+    <target name="build" depends="prepare, phpunit" description="Default target (build project)"/>
 
-    <target name="prepare" depends="clean">
+    <target name="prepare" depends="clean" description="Make directories for build artifacts">
         <mkdir dir="build/logs"/>
     </target>
 
-    <target name="clean">
+    <target name="clean" description="Clean build directory from build artifacts">
         <delete dir="build/logs"/>
     </target>
 
-    <target name="phpunit">
+    <target name="phpunit" description="Run unit tests with PHPUnit">
         <exec executable="phpunit"/>
     </target>
 
