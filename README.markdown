@@ -1,6 +1,6 @@
 # Jenkins Demo
 
-Demo showing how PHP projects can be continously built with Jenkins CI Server.
+Demo showing how PHP projects can be continously built with Jenkins CI Server. For building we use Phing.
 
 ## Source Code
 
